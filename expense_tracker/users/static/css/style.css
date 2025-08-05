@@ -1,0 +1,265 @@
+*{
+    margin: 0;
+    padding: 0;
+ 
+}
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+  /* background-image: url(../img/back.jpg); */
+  /* background-color: rgba(54, 50, 50, 0.92); */
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* home page */
+.container{
+    width: 1400vh;
+    /* background-color: rgb(236, 212, 212);  */
+    background-position: center;
+    background-size: cover;
+    height: 200vh;
+}
+
+.navbar{
+    /* width: 600px; */
+    height: 60px;
+    margin: auto;
+    margin-top: 15px;
+}
+
+.logo{
+    color: blueviolet;
+    font-size: 20px;
+    font-family: Arial;
+    font-weight: bold ;
+    padding-left:10px;
+    float: left;
+    padding-top: 5px;
+    margin-left:5px;
+    margin-top:5px;
+}
+
+.logo-img {
+    height: 50px;
+    width: 50px;
+    margin-left:10px;
+}
+
+.selector {
+    width: 20px;          
+    margin-left: 450px;  
+    margin-right:600px;
+    position: relative;
+    top:5px;
+}
+
+.btn{
+    width: 100px;
+    margin-left: 500px;
+    margin-top: 10px;
+    /* color:cornsilk; */
+}
+.h1{
+     /* text-align: center; */
+    margin-top:60px;
+    font-style:Arial;
+    color:brown;
+    /* margin-left:5px; */
+}
+
+.h6{
+    /* text-align: center; */
+    margin-top:20px;
+    font-style:Arial;
+    color:light pink;
+    /* margin-left: 10px; */
+}
+
+.btn-danger{
+    background-color:crimson;
+    color:cornsilk; 
+    font-weight: bold;
+    width:130px;
+    margin-left: 100px;
+    margin-top: 30px;
+}
+
+.container-fluid{
+   width: 100vh;
+   /* background-color: lightpink; */
+    background-position: center;
+    height: 50vh;
+    margin-top:80px;
+}
+
+.container-fluid-1{
+    width: 70vh;
+    background-position: center;
+    background-size: cover;
+    height: 50vh;
+    margin-top:0px;
+    margin-left:100px;
+}
+.card-1{
+    width:70vh;
+    background-color: rgb(201, 201, 201);
+    border-radius: 15px;
+    margin-left:380px;
+
+}
+
+.card-2{
+   width:100vh;
+    /* box-shadow: 0 4px 10px rgba(0,0,0,0.1); */
+    border-radius: 15px;
+    margin-left:280px;
+}
+
+/* Carousel Container */
+#expenseCarousel {
+  position: relative;
+  max-width: 600px;
+  margin: 0 auto;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+/* Carousel Inner Images */
+.carousel-inner img {
+  display: block;
+  width: 100%;        
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+  margin: 0 auto;       
+}
+
+/* Carousel Controls */
+#expenseCarousel .carousel-control-prev,
+#expenseCarousel .carousel-control-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 40px;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 50%;
+  z-index: 1;
+}
+
+#expenseCarousel .carousel-control-prev {
+  left: 10px;
+}
+
+#expenseCarousel .carousel-control-next {
+  right: 10px;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: transparent;
+}
+
+.head{
+    font-size:40px;
+    color:whitesmoke; 
+    margin-left:190px;
+    position: relative;
+    top: 20px;
+}
+
+/* Add page */
+.card-3{
+    width:100vh;
+    background-color:rgb(153, 159, 165);
+    border-radius: 15px;
+    margin-left:260px;
+    font-family:'Times New Roman', Times, serif;
+    height:50vh;
+}
+
+.details{
+    margin-left:200px;
+    margin-top: 30px;
+}
+.form-control{
+    width:400px;
+    margin-top:20px;
+    margin-left:180px;
+}
+
+.select_1{
+   width: 20px;          
+    margin-left: 550px; 
+    margin-bottom:60px;
+    margin-top:10px;
+    position: relative; 
+    bottom: 40px;
+}
+
+.btn-primary-12{
+width:190px;
+margin-top:30px;
+margin-left:280px;
+background-color:lightblue;
+font-weight: bold;
+position: relative;
+bottom:90px;
+}
+
+/* Dashboard */
+.card-4{
+    width:100vh;
+    background-color:rgb(229, 233, 236);
+    border-radius: 15px;
+    margin-left:260px;
+    font-family:'Times New Roman', Times, serif;
+    height:30vh;
+}
+.text{
+    text-align: center;
+    margin-top:1px;
+    font-size:40px;
+    margin-top:5px;
+    position: relative;
+    top:20px
+}
+
+.btn-primary-1{
+padding: 5px;
+margin-left:50px;
+width:100px;
+position:relative;
+bottom: 60px;
+top: 10px;
+background-color:lightblue;
+  font-weight: bold;
+}
+
+.btn-primary-2{
+padding: 5px;
+margin-left:120px;
+width:100px;
+position:relative;
+bottom: 60px;
+top: 10px;
+font-weight: bold;
+background-color:lightblue;
+}
+
+.btn-primary-3{
+padding: 5px;
+margin-left:150px;
+width:100px;
+position:relative;
+bottom: 60px;
+top: 10px;
+background-color:lightblue;
+font-weight: bold;
+}
+
+..selector_2{ 
+
+}
