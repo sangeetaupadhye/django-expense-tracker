@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Dashboard - Expense Tracker</title>
+  <link rel="stylesheet" href="./css/ex.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<body>
+
+  <!-- Navbar with Menu Button -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm px-4">
+    <div class="container-fluid">
+      <a class="navbar-brand d-flex align-items-center" href="#">
+        <img src="./img/logo.jpg" alt="Logo" class="logo-img">
+        <span class="fs-4 fw-bold text-primary ms-2">Expense Tracker</span>
+      </a>
+      <div class="dropdown ms-auto">
+        <button class="btn btn-primary dropdown-toggle" type="button" id="menuButton" data-bs-toggle="dropdown" aria-expanded="false">
+          Menu
+        </button>
+        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="menuButton">
+          <li><a class="dropdown-item" href="dashboard.html">Dashboard</a></li>
+          <li><a class="dropdown-item" href="home.html">Home</a></li>
+          <li><a class="dropdown-item" href="all-expenses.html">All Expenses</a></li>
+          <li><a class="dropdown-item" href="login.html">Logout</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Dashboard Content -->
+  <div class="container my-5">
+    <h2 class="mb-4">Dashboard</h2>
+
+    <!-- Summary Cards -->
+    <div class="row mb-4">
+      <div class="col-md-4">
+        <div class="card text-white bg-primary mb-3">
+          <div class="card-body">
+            <h5 class="card-title">Total Expenses</h5>
+            <p class="card-text fs-4">₹12,450</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card text-white bg-success mb-3">
+          <div class="card-body">
+            <h5 class="card-title">Recent Expense</h5>
+            <p class="card-text fs-4">₹1,200 - Groceries</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card text-white bg-warning mb-3">
+          <div class="card-body">
+            <h5 class="card-title">Top Category</h5>
+            <p class="card-text fs-4">Shopping</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Category Expenses with Progress Bars -->
+    <div class="mb-5">
+      <h5>Expenses by Category</h5>
+      <div class="mb-3">
+        <label class="form-label">Food</label>
+        <div class="progress">
+          <div class="progress-bar bg-primary" style="width: 30%">₹1,200</div>
+        </div>
+      </div>
+      <div class="mb-3">
+        <label class="form-label">Travel</label>
+        <div class="progress">
+          <div class="progress-bar bg-success" style="width: 20%">₹800</div>
+        </div>
+      </div>
+      <div class="mb-3">
+        <label class="form-label">Shopping</label>
+        <div class="progress">
+          <div class="progress-bar bg-warning text-dark" style="width: 40%">₹2,000</div>
+        </div>
+      </div>
+      <div class="mb-3">
+        <label class="form-label">Bills</label>
+        <div class="progress">
+          <div class="progress-bar bg-danger" style="width: 25%">₹1,000</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Recent Activity as Text List -->
+    <div>
+      <h5>Recent Activity</h5>
+      <ul class="list-group">
+        <li class="list-group-item">🛒 Spent ₹1,200 on Groceries (01 Aug 2025)</li>
+        <li class="list-group-item">🎬 Spent ₹500 on Movies (31 Jul 2025)</li>
+        <li class="list-group-item">🚌 Spent ₹250 on Bus Pass (30 Jul 2025)</li>
+        <li class="list-group-item">💡 Paid ₹1,000 on Electricity Bill (28 Jul 2025)</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS (required for dropdown) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

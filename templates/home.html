@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Home - Expense Tracker</title>
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="./css/ex.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm px-4">
+    <a class="navbar-brand d-flex align-items-center" href="#">
+      <img src="./img/logo.jpg" alt="Logo" class="logo-img">
+      <span class="fs-4 fw-bold text-primary ms-2">Expense Tracker</span>
+    </a>
+
+    <div class="ms-auto d-flex align-items-center">
+      <!-- Login Button -->
+      <a href="login.html" class="btn btn-outline-primary me-3">Login</a>
+
+      <!-- Dropdown Menu -->
+      <div class="dropdown">
+        <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+           Menu
+        </button>
+        <ul class="dropdown-menu dropdown-menu-end">
+          <li><a class="dropdown-item" href="dashboard.html">Dashboard</a></li>
+          <li><a class="dropdown-item" href="add_ex.html">Add Expense</a></li>
+          <li><a class="dropdown-item" href="all_ex.html">All Expenses</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Cards with Messages -->
+  <div class="container mt-5">
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="card shadow">
+          <div class="card-body">
+            <h5 class="card-title text-primary">Track Your Expenses</h5>
+            <p class="card-text">Easily monitor your daily, weekly, and monthly expenses in one place.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card shadow">
+          <div class="card-body">
+            <h5 class="card-title text-success">Manage Budget</h5>
+            <p class="card-text">Stay in control by setting budgets and avoiding overspending.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card shadow">
+          <div class="card-body">
+            <h5 class="card-title text-danger">Smart Insights</h5>
+            <p class="card-text">Analyze your spending patterns and make smarter financial decisions.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Add Expense Button -->
+    <div class="text-center mt-4">
+      <a href="add_ex.html" class="btn btn-primary btn-lg">Add Expense</a>
+    </div>
+  </div>
+
+  <!-- Image Slider -->
+  <div id="expenseCarousel" class="carousel slide mt-5 container" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="./img/1.jpg" class="d-block w-100" alt="Slide 1">
+      </div>
+      <div class="carousel-item">      
+        <img src="./img/2.jpg" class="d-block w-100" alt="Slide 2">
+      </div>
+      <div class="carousel-item">
+        <img src="./img/3.jpg" class="d-block w-100" alt="Slide 3">
+      </div>
+    </div>
+
+    <button class="carousel-control-prev" type="button" data-bs-target="#expenseCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+
+    <button class="carousel-control-next" type="button" data-bs-target="#expenseCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

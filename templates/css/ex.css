@@ -1,0 +1,130 @@
+.body_1{
+  background: linear-gradient(to right, #6dd5ed, #2193b0);
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Home page */
+body {
+  background-color: #f8f9fa;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Logo in navbar */
+.logo-img {
+  height: 40px;
+  width: auto;
+}
+
+/* Navbar heading beside logo */
+.navbar-brand span {
+  font-weight: bold;
+  font-size: 1.25rem;
+}
+
+/* Cards styling */
+.card {
+  border: none;
+  border-radius: 10px;
+}
+
+/* Carousel images */
+.carousel-inner img {
+  height: 500px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* Add expens page */
+
+.expense-form {
+  background-color: #fff;
+  max-width: 600px;
+  margin: auto;
+  padding: 30px 35px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.08);
+}
+
+.expense-form h2 {
+  font-weight: 600;
+}
+
+.form-label {
+  font-weight: 500;
+}
+
+.btn-primary {
+  font-weight: 500;
+  border-radius: 6px;
+}
+
+
+/* All expense */
+.logo-img_1 {
+  height: 40px;
+  width: auto;
+}
+
+/* Make table headers bold */
+.expense-table thead th {
+  font-weight: 600;
+  vertical-align: middle;
+  text-align: center;
+}
+
+/* Center align inputs inside header cells */
+.expense-table thead input {
+  margin-top: 4px;
+  text-align: center;
+}
+
+/* Pagination styles */
+.pagination-custom .page-link {
+  color: #0d6efd;
+  border-radius: 0.25rem;
+}
+
+.pagination-custom .page-item.active .page-link {
+  background-color: #0d6efd;
+  border-color: #0d6efd;
+  color: white;
+}
+
+/* Optional: Add hover effect on table rows */
+.expense-table tbody tr:hover {
+  background-color: #f8f9fa;
+}
+
+
+
+/* dashboard */
+.logo-img {
+  height: 40px;
+  width: auto;
+}
+
+.card {
+  border-radius: 1rem;
+}
+
+.card-title {
+  font-weight: 500;
+}
+
+.progress {
+  height: 25px;
+  border-radius: 0.5rem;
+}
+
+.progress-bar {
+  font-weight: 500;
+  padding-left: 10px;
+}
+
+.list-group-item {
+  font-size: 1rem;
+}
+
+.dropdown-menu a {
+  font-weight: 500;
+}
