@@ -3,14 +3,14 @@ from .models import Expense
 from .forms import ExpenseForm
 from django.contrib.auth.decorators import login_required
 
-# ✅ Add Expense
+
 @login_required
 def add_expense(request):
     if request.method == 'POST':
         form = ExpenseForm(request.POST)
         if form.is_valid():
             expense = form.save(commit=False)
-            expense.user = request.user  # ✅ Must link to logged-in user
+            expense.user = request.user 
             expense.save()
             return redirect('all_expenses')
     else:
@@ -20,7 +20,7 @@ def add_expense(request):
 
 @login_required
 def all_expenses(request):
-    expenses = Expense.objects.filter(user=request.user)  # or just Expense.objects.all()
+    expenses = Expense.objects.filter(user=request.user)  
     return render(request, 'expenses/all_expense.html', {'expenses': expenses})
 
 
