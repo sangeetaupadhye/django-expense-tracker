@@ -56,4 +56,4 @@ def add_expense(request):
     return render(request, 'add_expense.html')
 
 def all_expenses(request):
-    return render(request, 'all_expenses.html')
+    return render(request, 'all_expense.html')

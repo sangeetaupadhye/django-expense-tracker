@@ -1,0 +1,49 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Edit Expense</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'css/ex.css' %}">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm px-4">
+    <div class="container-fluid">
+        <a class="navbar-brand d-flex align-items-center" href="{% url 'home' %}">
+            <img src="{% static 'img/logo.jpg' %}" alt="Logo" class="logo-img">
+            <span class="fs-4 fw-bold text-primary ms-2">Expense Tracker</span>
+        </a>
+
+        <div class="dropdown ms-auto">
+            <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                Menu
+            </button>
+            <ul class="dropdown-menu dropdown-menu-end">
+                <li><a class="dropdown-item" href="{% url 'home' %}">Home</a></li>
+                <li><a class="dropdown-item" href="{% url 'all_expenses' %}">All Expenses</a></li>
+                <li><a class="dropdown-item" href="{% url 'add_expense' %}">Add Expense</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item text-danger" href="{% url 'logout' %}">Logout</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="container my-5">
+    <h2 class="mb-4 text-primary">Edit Expense</h2>
+    
+    <form method="POST" class="card p-4 shadow-sm">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <div class="d-flex justify-content-between mt-3">
+            <a href="{% url 'all_expenses' %}" class="btn btn-secondary">Cancel</a>
+            <button type="submit" class="btn btn-success">Save Changes</button>
+        </div>
+    </form>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -6,6 +6,6 @@ urlpatterns = [
     path('logout/', views.logout_user, name='logout'),
     path('home/', views.home, name='home'),  
 
-    path('add-expense/', views.add_expense, name='add_expense'),
-    path('all-expenses/', views.all_expenses, name='all_expenses'),
+    path('add_expense/', views.add_expense, name='add_expense'),
+    path('all_expenses/', views.all_expenses, name='all_expenses'),
 ]
