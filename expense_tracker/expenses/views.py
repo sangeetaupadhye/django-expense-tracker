@@ -2,6 +2,7 @@ from django.shortcuts import render, redirect, get_object_or_404
 from .models import Expense
 from .forms import ExpenseForm
 from django.contrib.auth.decorators import login_required
+from django.db.models import Sum
 
 
 @login_required
@@ -18,10 +19,20 @@ def add_expense(request):
     return render(request, 'add_expense.html', {'form': form})
 
 
+# @login_required
+# def all_expenses(request):
+#     expenses = Expense.objects.filter(user=request.user)  
+#     return render(request, 'expenses/all_expense.html', {'expenses': expenses})
+
+
 @login_required
 def all_expenses(request):
     expenses = Expense.objects.filter(user=request.user)  
-    return render(request, 'expenses/all_expense.html', {'expenses': expenses})
+    total_amount = expenses.aggregate(total=Sum('amount'))['total'] or 0
+    return render(request, 'expenses/all_expense.html', {
+        'expenses': expenses,
+        'total_amount': total_amount
+    }) 
 
 
 def edit_expense(request, expense_id):
